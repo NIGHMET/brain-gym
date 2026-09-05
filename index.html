@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <title>脑力健身房</title>
+  <meta name="description" content="为她定制的每日五分钟脑力训练：记忆、反应、专注、计算、推理">
+  <meta name="theme-color" content="#fdf6ee">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="脑力健身房">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="app">
+    <main id="screens">
+      <section id="scr-today" class="screen"></section>
+      <section id="scr-train" class="screen hidden"></section>
+      <section id="scr-progress" class="screen hidden"></section>
+      <section id="scr-me" class="screen hidden"></section>
+      <section id="scr-science" class="screen hidden"></section>
+    </main>
+    <nav id="tabbar"></nav>
+  </div>
+
+  <div id="game-layer" class="hidden">
+    <div class="game-top">
+      <button id="game-back" aria-label="返回">‹</button>
+      <div id="game-title"></div>
+      <div id="game-status"></div>
+    </div>
+    <div id="game-root"></div>
+  </div>
+
+  <div id="result-overlay" class="hidden"></div>
+
+  <script src="js/core.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/games/corsi.js"></script>
+  <script src="js/games/stroop.js"></script>
+  <script src="js/games/flash.js"></script>
+  <script src="js/games/math.js"></script>
+  <script src="js/games/matrix.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
