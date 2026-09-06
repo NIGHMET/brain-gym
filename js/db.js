@@ -2,7 +2,7 @@
 (function () {
   const KEY = 'braingym.v1';
   const ORDER = ['corsi', 'stroop', 'flash', 'math', 'matrix'];   // 每日五维
-  const BONUS = ['match', 'nback'];                                // 进阶加练（不并入每日计划/雷达，独立记成绩）
+  const BONUS = ['match', 'nback', 'duel'];                       // 进阶加练（不并入每日计划/雷达，独立记成绩）
 
   const DB = {
     s: null,
@@ -139,7 +139,8 @@
         { id: 'all', label: '五维全能', desc: '五项都挑战过', earned: allBest },
         { id: 'good', label: '轻车熟路', desc: '任一游戏 60 分', earned: anyHigh },
         { id: 'match', label: '记忆搭子', desc: '翻牌配对 60 分', earned: reach('match', 60) },
-        { id: 'nback', label: '双线作战', desc: '双n-back 60 分', earned: reach('nback', 60) }
+        { id: 'nback', label: '双线作战', desc: '双n-back 60 分', earned: reach('nback', 60) },
+        { id: 'duel', label: '双人默契', desc: '双人翻牌 60 分', earned: reach('duel', 60) }
       ];
     },
     // 薄弱项推荐：练过但平均分最低的五维领域
