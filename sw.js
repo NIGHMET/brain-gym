@@ -1,5 +1,5 @@
 // 离线缓存：改代码后把版本号 +1 即可强制刷新
-const CACHE = 'braingym-v1.3.0';
+const CACHE = 'braingym-v1.3.1';
 const ASSETS = [
   './',
   'index.html',
